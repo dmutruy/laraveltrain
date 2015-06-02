@@ -11,6 +11,7 @@
 |
 */
 Route::controllers([
+	'admin' => 'Admin\AdminController',
 	'cart' => 'CartController',
 	'acaunt' => 'Cabinet\AcauntController',
 	'works/{id?}' => 'Cabinet\WorksController',

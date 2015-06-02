@@ -18,10 +18,10 @@
 	
 	<form method="post" action="{{asset('cart/add/'.$product->id)}}">
 	
-		<?php 
-
-		$summa = $product->price*Cookie::get($product->id);
-		$all  += $summa; ?>
+	<?php 
+	$summa = $product->price*Cookie::get($product->id);
+	$all  += $summa; ?>
+	
 	<tr class="active">
 		<td></td><td>{{$product->name}}</td><td>{{$product->price}}</td><td>
 				<input type="number" name ="col" value="{{Cookie::get($product->id)}}"/>
@@ -57,4 +57,8 @@
 
 </form>
 @stop
+
+
+
+
 

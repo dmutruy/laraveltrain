@@ -4,14 +4,15 @@ use Cookie;
 
 class cookies{
 
-  public function __construct()
-  {
-			
-  } 
+	public function __construct()
+	{
+		
+	} 
+	
 	public function getall()//массив кук
 	{
 		$arr = array();
-		foreach($_COOKIE as $key => $value)
+		foreach($_COOKIE as $key => $value)//$key - имя куки
 		{
 			$key = (int)$key;// именно наши куки - товары
 			if($key > 0)

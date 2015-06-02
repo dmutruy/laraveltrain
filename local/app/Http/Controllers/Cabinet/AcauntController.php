@@ -33,7 +33,7 @@ class AcauntController extends \App\Http\Controllers\Controller {
 		([
 			'user_id' => Auth::user()->id,
 		],
-		$r->all());//сама все вставляет и проверяет $errors,//все эл-ты форм, кроме токена
+		$r->all());//сама все вставляет и проверяет $errors,все эл-ты форм, кроме токена
 		return redirect('acaunt');
 	}
 	

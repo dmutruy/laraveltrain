@@ -21,7 +21,7 @@ class CartController extends \App\Http\Controllers\ProductsController {
 	
 	public function postAdd($id = NULL)
 	{
-		$temp = Cookie::make($id,$_POST['col'],3600);//$id - $id  товара,POST['col'] - количество товара
+		$temp = Cookie::make($id,$_POST['col'],300);//$id - $id  товара,POST['col'] - количество товара
 		return redirect::to('cart')->withCookie($temp);
 	}
 	
@@ -34,7 +34,7 @@ class CartController extends \App\Http\Controllers\ProductsController {
 	
 	public function getDell($id = NULL)
 	{
-		$temp = Cookie::make($id,NULL,-1);//$id - $id  товара,POST['col'] - количество товара
+		$temp = Cookie::make($id,NULL,-1);// Cookie::make создает зашиврованный cookie
 		return redirect::to('cart')->withCookie($temp);
 	}
 	
