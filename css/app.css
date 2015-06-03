@@ -6268,6 +6268,7 @@ label,
 	height: 100%;
 	border:1px solid grey;
 	background-image:url('/media/vetton_ru_1100-1920x1200.jpg'); 
+	overflow: hidden;
 	min-height: 700px;
 
 }
@@ -6278,6 +6279,7 @@ label,
 	height: 100%;
 	border:1px solid grey;
 	background-image:url('/media/vetton_ru_1100-1920x1200.jpg'); 
+	overflow: hidden;
 	min-height: 700px;
 
 }

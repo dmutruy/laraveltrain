@@ -1,7 +1,7 @@
 @extends('cabinet')
 
 @section('content')
-<div class="works">
+<div class="user1">
 
 	<h2>Таблица приема заказов:</h2>
 	
@@ -49,13 +49,12 @@ $all  += $summa; ?>
 						
 @endforeach
 						
-				<tr class="active"><td colspan="4">Итого:</td><td>{{$all}}</td></tr>
-	
+			<tr class="active"><td colspan="4">Итого:</td><td>{{$all}}</td></tr>
 		</table>	
 	</td>
 			<td>{{$tov->phone}}</td>
 		<td>{{$tov->email}}</td>
-	<td><a href ="#">Измен.статус</a>&nbsp;<a href ="{{asset('admin/dell/'.$tov->id)}}" style="color: red">Удалить</a><br/><a href ="#">Написать сообщение</a></td>
+	<td><a href ="{{asset('admin/upp/'.$tov->email)}}">Измен.статус</a>&nbsp;<a href ="{{asset('admin/dell/'.$tov->id)}}" style="color: red">Удалить</a><br/><a href ="#">Написать сообщение</a></td>
 	
 </tr>				
 

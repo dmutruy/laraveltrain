@@ -26,6 +26,12 @@ class AdminController extends \App\Http\Controllers\Admin\MainController {
 		return redirect('admin');
 	}
 	
+	public function getUpp($id = NULL)
+	{
+		\App\Cart::where('email', '=', $id)->where('status', 'new')->update(array('status' => 'old'));
+		return redirect('admin');
+	}
+	
 }
 //php artisan make:console Parse --command=parse:assign
 //php artisan parse:assign --example=bar
